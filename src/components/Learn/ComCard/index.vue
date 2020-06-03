@@ -18,6 +18,10 @@
         />
       </ul>
     </div>
+
+    <div class="btn-wrap">
+      <button class="btn" @click="onMoreClick">进入课程</button>
+    </div>
   </div>
 </template>
 
@@ -48,6 +52,7 @@ export default {
 .common-card {
   margin-top: 40rpx;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .scroll {
@@ -60,5 +65,19 @@ export default {
   margin-left: 20rpx;
   height: 350rpx;
   overflow-x: scroll;
+}
+
+.btn-wrap {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.btn {
+  width: 60%;
+  line-height: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(12, 237, 245);
+  font-size: 15px;
+  color: #fff;
 }
 </style>

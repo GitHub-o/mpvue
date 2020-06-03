@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/learn/main",
-    "pages/question/main",
     "pages/mine/main",
     "pages/lesson/main",
+    "pages/learn/main",
+    "pages/question/main",
     "pages/detail/main",
     "pages/myLesson/main",
     "pages/watch/main"

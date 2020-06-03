@@ -37,6 +37,7 @@ export default {
   padding: 30rpx;
   display: flex;
   border-bottom: 1rpx solid #ddd;
+  height: 234rpx;
 }
 
 .img-wrap {
@@ -59,7 +60,7 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: n;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 

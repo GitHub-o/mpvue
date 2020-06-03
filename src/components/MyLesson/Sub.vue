@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { LESSON_LOCK } from '@/config'
+import { TOAST } from '@/config'
 
 export default {
   props: {
@@ -47,7 +47,7 @@ export default {
     onNavToClick (lock) {
       if (lock) {
         wx.showToast({
-          title: LESSON_LOCK, //提示的内容,
+          title: TOAST.LESSON_LOCK, //提示的内容,
           icon: 'failed', //图标,
           duration: 2000, //延迟时间,
           mask: true

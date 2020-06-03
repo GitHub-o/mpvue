@@ -19,7 +19,7 @@
 import { mapActions, mapState } from 'vuex'
 import * as API from '@/api'
 import { asyncFunc } from '@/utils'
-import { NETWORDK_ERROR } from '@/config'
+import { TOAST } from '@/config'
 
 export default {
   computed: {
@@ -44,7 +44,7 @@ export default {
 
       if (err) {
         wx.showToast({
-          title: 'NETWORDK_ERROR', //提示的内容,
+          title: TOAST.NETWORK_ERROR, //提示的内容,
           icon: 'fail', //图标,
           duration: 2000, //延迟时间,
           mask: true
@@ -58,7 +58,7 @@ export default {
 
       if (err1) {
         wx.showToast({
-          title: 'NETWORDK_ERROR', //提示的内容,
+          title: TOAST.NETWORK_ERROR, //提示的内容,
           icon: 'fail', //图标,
           duration: 2000, //延迟时间,
           mask: true
@@ -68,7 +68,6 @@ export default {
 
       if (res1.totalCount > 0) {
         this.SetRecomLesson(res1);
-        console.log('getOpenid -> res1', res1)
         wx.switchTab({ url: '/pages/learn/main' });
         return;
       }
