@@ -44,7 +44,7 @@ export default {
       if (err) {
         wx.showToast({
           title: TOAST.NETWORK_ERROR, //提示的内容,
-          icon: 'fail', //图标,
+          icon: 'none', //图标,
           duration: 2000, //延迟时间,
           mask: true, //显示透明蒙层，防止触摸穿透,
         });

@@ -48,7 +48,7 @@ export default {
       if (lock) {
         wx.showToast({
           title: TOAST.LESSON_LOCK, //提示的内容,
-          icon: 'failed', //图标,
+          icon: 'none', //图标,
           duration: 2000, //延迟时间,
           mask: true
         });
